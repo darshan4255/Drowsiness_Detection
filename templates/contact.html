@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> DriveAlert </title>
+        <link rel = "icon" href = "../static/logo.png" type = "image/x-icon"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="../static/style.css">
+    </head>
+    <body>
+    	<div class="div-head">
+        	<h1> MEET THE CREATORS </h1>
+        	<div class="jumbotron jumb-width">
+  				<hr class="my-4">
+  				<p class="lead">If you have any queries or suggestions, please feel free to contact one of us and we would be more than happy to have a chat with you. </p>
+  				</div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card card-style" style = "background-color: rgba(84, 104, 135, 0.3)">
+                <div class="card-body" >
+                  <img src="../static/darshan.jpg">
+                  <p class="card-text"> Darshan Raval </p>
+                  <p style = "text-align: center;"> Undergrad at Charusat University </p>
+                  <div class="template-demo"> 
+                  	<button type="button" class="btn btn-social-icon btn-outline-linkedin" onclick="location.href='https://www.linkedin.com/mwlite/in/darshan-raval-258958173'"><i class="fa fa-linkedin linkedin-bg"></i></button> 
+                  	<button type="button" class="btn btn-social-icon btn-outline-instagram"><i class="fa fa-instagram insta-bg" onclick="location.href='https://www.instagram.com/darshan__raval__07/'"></i></button> 
+                  	<button type="button" class="btn btn-social-icon btn-outline-google" onclick="sendEmail1();"><i class="fa fa-google"></i></button><button type="button" class="btn btn-social-icon btn-outline-github" onclick="location.href='https://github.com/darshan4255'"><i class="fa fa-github github-bg"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card card-style" style = "background-color: rgba(84, 104, 135, 0.3)">
+                <div class="card-body">
+                  <img src="../static/rajvi.jpg">
+                  <p class="card-text"> Rajvi Shah </p>
+                  <p style = "text-align: center;"> Undergrad at Charusat University </p>
+                  <div class="template-demo"> 
+                    <button type="button" class="btn btn-social-icon btn-outline-linkedin" onclick="location.href='https://www.linkedin.com/in/rajvishah002/'"><i class="fa fa-linkedin linkedin-bg"></i>
+                    </button> <button type="button" class="btn btn-social-icon btn-outline-instagram"><i class="fa fa-instagram insta-bg" onclick="location.href='https://www.instagram.com/rajvee_02/'"></i></button> 
+                    <button type="button" class="btn btn-social-icon btn-outline-google" onclick="sendEmail2();"><i class="fa fa-google"></i>
+                    </button><button type="button" class="btn btn-social-icon btn-outline-github" onclick="location.href='https://github.com/RajviShah002'"><i class="fa fa-github github-bg"></i></button></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card card-style" style = "background-color: rgba(84, 104, 135, 0.3)">
+                <div class="card-body">
+                  <img src="../static/hari.jpeg">
+                  <p class="card-text"> Harikesh Prajapati </p>
+                  <p style = "text-align: center;"> Undergrad at Charusat University </p>
+                  <div class="template-demo"> 
+                    <button type="button" class="btn btn-social-icon btn-outline-linkedin " onclick="location.href='https://www.linkedin.com/mwlite/in/harikesh-prajapati-2833651a4'"><i class="fa fa-linkedin linkedin-bg"></i></button> 
+                    <button type="button" class="btn btn-social-icon btn-outline-instagram"><i class="fa fa-instagram insta-bg" onclick="location.href='https://www.instagram.com/_harikesh_52811'"></i></button> 
+                    <button type="button" class="btn btn-social-icon btn-outline-google" onclick="sendEmail3();"><i class="fa fa-google"></i></button><button type="button" class="btn btn-social-icon btn-outline-github" onclick="location.href='https://github.com//hp528122'"><i class="fa fa-github github-bg"></i></button></div>
+                </div>
+          	</div>
+          </div>
+      </div>
+      <footer class="footer">
+        <div>
+          <span><a href="{{url_for('test1')}}" class="btn btn-outline-warning btn-lg" style = "text-decoration: none;"> Back </a></span>
+        </div>
+      </footer>
+    </body>
+</html>
+<script>
+function sendEmail1() 
+{
+    window.location = "mailto:darshanraval194@gmail.com";
+}
+
+function sendEmail2() 
+{
+    window.location = "mailto:rajvishah365@gmail.com";
+}
+
+function sendEmail3() 
+{
+    window.location = "mailto:hp528122@gmail.com";
+}
+</script>
